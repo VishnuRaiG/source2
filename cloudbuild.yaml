@@ -1,6 +1,6 @@
 steps:
   - name: "gcr.io/cloud-builders/git"
-    args: ["-c", "credential.helper=store", "clone", "https://vishnuraig:${PAT}@github.com/vishnuraig/source2.git"]
+    args: ["-c", "credential.helper=store", "clone", "https://vishnuraig:${_YOUR_PAT}@github.com/vishnuraig/source2.git"]
 
 substitutions:
-  _PAT: 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
+  _YOUR_PAT: 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
