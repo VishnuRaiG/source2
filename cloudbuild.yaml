@@ -1,8 +1,3 @@
 steps:
-  # Check if the target directory exists and is empty
-  - name: "gcr.io/cloud-builders/gsutil"
-    args: ["ls", "-ld", "/workspace/rtstudio-backend"]
-
-  # If the directory doesn't exist or is empty, clone the repository
   - name: "gcr.io/cloud-builders/git"
-    args: ["clone", "https://github.com/your-username/source2.git", "rtstudio-backend"]
+    args: ["clone", "https://github.com/your-username/source2.git"]
