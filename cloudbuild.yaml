@@ -1,6 +1,9 @@
 steps:
-  - name: "gcr.io/cloud-builders/git"
-    args: ["-c", "credential.helper=store", "clone", "https://vishnuraig:${_YOUR_PAT}@github.com/vishnuraig/source2.git"]
+#First Clone from Google Cloud Source Repository  
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone','https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}']
 
-substitutions:
-  _YOUR_PAT: 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
+  substitutions:
+    #GCP Specific configuration. Please DON'T change anything
+    _PROJECT: source2
+    _REPO_NAME: github_vishnuraig_source1
