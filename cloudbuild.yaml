@@ -1,8 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/git'
-  args: ['rm', '-rf', '.']  # Remove existing contents
-- name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}', '.']  # Clone into the current directory
+  args: ['clone', 'https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}', '.']
 
 substitutions:
   # GCP Specific configuration. Please DON'T change anything
