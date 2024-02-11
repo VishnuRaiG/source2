@@ -6,5 +6,5 @@ steps:
 
 substitutions:
   # GCP Specific configuration. Please DON'T change anything
-  _PROJECT: source2
+  _PROJECT: my-project-3-413921
   _REPO_NAME: github_vishnuraig_source1
