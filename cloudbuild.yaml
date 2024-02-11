@@ -1,9 +1,8 @@
 steps:
-#First Clone from Google Cloud Source Repository  
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone','https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}']
+  args: ['clone', 'https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}', '.']
 
-  substitutions:
-    #GCP Specific configuration. Please DON'T change anything
-    _PROJECT: source2
-    _REPO_NAME: github_vishnuraig_source1
+substitutions:
+  # GCP Specific configuration. Please DON'T change anything
+  _PROJECT: source2
+  _REPO_NAME: github_vishnuraig_source1
